@@ -1,0 +1,91 @@
+.demo1 {
+color: darkslateblue;
+padding: 20px;
+background-color:red;
+width:20%;
+box-sizing: border-box;
+float: left;
+}
+
+.demo2 {
+color:darkorchid;
+padding: 20px;
+background-color:green;
+width:30%;
+box-sizing: border-box;
+float: left;
+}
+.demo3 {
+color:darkgreen;
+padding: 20px;
+background-color:wheat;
+width:50%;
+box-sizing: border-box;
+float: left;
+}
+ /* for a resposive web design we need media queries */
+@media screen and (max-width:800px) {
+    .demo1,.demo2,.demo3{
+        width:100%;
+    }
+    
+}
+
+.head{
+background-color: grey;
+text-align: center;
+    color: aqua;
+}
+
+.container {
+
+}
+
+.menu {
+float:left;
+width:20%;
+}
+
+.container .menu {
+
+}
+
+.menu a {
+padding:20px;
+width:100%;
+display: block;
+margin-top:7px;
+padding:8px;
+background-color: red;
+
+}
+.main{
+float:left;
+width: 60%;
+padding: 0 20px;
+}
+
+.right-section {
+float:left;
+width:20%;
+}
+
+.end {
+background-color: green;
+}
+
+/* one way */
+/* @media screen and (max-width:800px) {
+    .demo1,.demo2,.demo3{
+        width:100%;
+    }
+    
+} */
+
+/* second way */
+@media only screen and (max-width:600px) {
+    .menu,.main,.right-section{
+        width:100%;
+    }
+    
+}
